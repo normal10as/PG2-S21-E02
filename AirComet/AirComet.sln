@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AirCometVb", "AirCometVb\AirCometVb.vbproj", "{296E4935-FA23-42BA-88B3-D2B83A18BF3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirCometCs", "AirCometCs\AirCometCs.csproj", "{1EE614DA-A114-49D1-AAA1-90D6210142DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{296E4935-FA23-42BA-88B3-D2B83A18BF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296E4935-FA23-42BA-88B3-D2B83A18BF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296E4935-FA23-42BA-88B3-D2B83A18BF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296E4935-FA23-42BA-88B3-D2B83A18BF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EE614DA-A114-49D1-AAA1-90D6210142DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EE614DA-A114-49D1-AAA1-90D6210142DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EE614DA-A114-49D1-AAA1-90D6210142DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EE614DA-A114-49D1-AAA1-90D6210142DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE4F2E18-F1A0-4E3A-8B30-C5770716E43C}
+	EndGlobalSection
+EndGlobal
