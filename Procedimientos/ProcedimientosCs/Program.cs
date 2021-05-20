@@ -13,6 +13,25 @@ namespace ProcedimientosCs
             Console.WriteLine(Concatenar("Hola","Mundo"));
             Console.WriteLine(Concatenar("Hola", "Mundo", "Cruel"));
             Console.WriteLine();
+
+            int a, b;
+            a = 10;
+            //b = 20;
+            Console.WriteLine(a);
+            //Console.WriteLine(b);
+            ParametroValor(a);
+            Console.WriteLine(a);
+            ParametroReferencia(ref a);
+            Console.WriteLine(a);
+        }
+
+        private static void ParametroValor(int a)
+        {
+            a += a;
+        }        
+        private static void ParametroReferencia(ref int b)
+        {
+            b += b;
         }
 
         static void Sumar(int valor1, int valor2)
@@ -27,7 +46,8 @@ namespace ProcedimientosCs
         {
             Console.WriteLine(valor1 + valor2 + valor3);
         }
-        static string Concatenar(string valor1, string valor2) 
+        static string Concatenar(
+            string valor1, string valor2) 
         {
             return valor1 +" "+ valor2;
         }
