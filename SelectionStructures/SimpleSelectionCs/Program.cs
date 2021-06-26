@@ -7,8 +7,9 @@ namespace SimpleSelectionCs
         static void Main(string[] args)
         {
             short a;
-            Console.Write("Ingrese un valor: ");
+            Console.Write("Ingrese un valor numérico entero: ");
             a = Convert.ToInt16(Console.ReadLine());
+
             if (a > 0)
                 Console.WriteLine("Es positivo");
 
