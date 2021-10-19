@@ -8,7 +8,7 @@ namespace CollectionsCs
     {
         static void Main(string[] args)
         {
-            EjemploArrayList();
+            //EjemploArrayList();
             EjemploList();
         }
 
@@ -20,7 +20,7 @@ namespace CollectionsCs
             paises.Add("China");
             paises.Add("India");
             paises.Add("Rusia");
-            paises.Add(1);
+            paises.Add("Uno");
 
             Iterar(paises);
             Console.WriteLine(paises[3]);
@@ -45,6 +45,8 @@ namespace CollectionsCs
             Console.WriteLine("Posición India: " + paises.IndexOf("India"));
             Console.WriteLine("Posición india: " + paises.IndexOf("india"));
         }
+
+
         private static void EjemploArrayList()
         {
             ArrayList paises = new ArrayList();
@@ -80,6 +82,13 @@ namespace CollectionsCs
         }
 
         private static void Iterar(ArrayList paises)
+        {
+            foreach (var item in paises)
+            {
+                Console.WriteLine(item);
+            }
+        }
+        private static void Iterar(List<string> paises)
         {
             foreach (var item in paises)
             {
