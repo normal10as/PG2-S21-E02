@@ -9,7 +9,46 @@ namespace CollectionsCs
         static void Main(string[] args)
         {
             //EjemploArrayList();
-            EjemploList();
+            //EjemploList();
+            EjemploQueue();
+        }
+
+        private static void EjemploQueue()
+        {
+            Queue<string> frutas;
+            frutas = new Queue<string>();
+            Iterar(frutas);
+            frutas.Enqueue("Pomelo");
+            frutas.Enqueue("Naranja");
+            frutas.Enqueue("Maracuja");
+            Iterar(frutas);
+            Console.WriteLine(frutas.Dequeue());
+            frutas.Enqueue("Limon");
+            Iterar(frutas);
+            Console.WriteLine(frutas.Dequeue());
+            Console.WriteLine(frutas.Peek());
+            Console.WriteLine(frutas.Dequeue());
+            Console.WriteLine(frutas.Peek());
+            CWTryDequeue(frutas);
+            //Console.WriteLine(frutas.Dequeue());
+            if (frutas.Count > 0)
+                Console.WriteLine(frutas.Dequeue());
+            CWTryDequeue(frutas);
+        }
+
+        private static void CWTryDequeue(Queue<string> frutas)
+        {
+            string item = "";
+            frutas.TryDequeue(out item);
+            Console.WriteLine(item);
+        }
+
+        private static void Iterar(Queue<string> frutas)
+        {
+            foreach (var item in frutas)
+            {
+                Console.WriteLine(item);
+            }
         }
 
         private static void EjemploList()
