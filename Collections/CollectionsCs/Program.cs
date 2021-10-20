@@ -8,11 +8,33 @@ namespace CollectionsCs
     {
         static void Main(string[] args)
         {
-            //EjemploArrayList();
-            //EjemploList();
+            EjemploArrayList();
+            EjemploList();
             EjemploQueue();
+            EjemploDictionary();
+        }
+        private static void EjemploDictionary()
+        {
+            Dictionary<short, string> Clientes;
+            Clientes = new Dictionary<short, string>();
+            Clientes.Add(1, "Pepe");
+            Clientes.Add(2, "Juana");
+            Clientes.Add(3, "Ruben");
+            Iterar(Clientes);
+            Console.WriteLine("Existe 2: " + Clientes.ContainsKey(2));
+            Console.WriteLine("Existe 4: " + Clientes.ContainsKey(4));
+            Console.WriteLine("Existe 2: " + Clientes.ContainsValue("Juana"));
+            Console.WriteLine("Existe 4: " + Clientes.ContainsValue("Luis"));
+            Clientes.TryAdd(2, "Juani");
+            Clientes.Remove(2);
+            Clientes.TryAdd(2, "Juani");
         }
 
+        private static void Iterar(Dictionary<short, string> clientes)
+        {
+            foreach (var item in clientes)
+                Console.WriteLine(item.Key + ": " + item.Value);
+        }
         private static void EjemploQueue()
         {
             Queue<string> frutas;
