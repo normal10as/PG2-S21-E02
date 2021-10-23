@@ -25,9 +25,12 @@ namespace CollectionsCs
             Console.WriteLine("Existe 4: " + Clientes.ContainsKey(4));
             Console.WriteLine("Existe 2: " + Clientes.ContainsValue("Juana"));
             Console.WriteLine("Existe 4: " + Clientes.ContainsValue("Luis"));
-            Clientes.TryAdd(2, "Juani");
+            var isAdded = Clientes.TryAdd(2, "Juani");
+            Console.WriteLine("¿Agregado?: " + isAdded);
             Clientes.Remove(2);
-            Clientes.TryAdd(2, "Juani");
+            isAdded = Clientes.TryAdd(2, "Juani");
+            Console.WriteLine("¿Agregado?: " + isAdded);
+            Iterar(Clientes);
         }
 
         private static void Iterar(Dictionary<short, string> clientes)

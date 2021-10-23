@@ -20,9 +20,9 @@ Module Program
         Console.WriteLine("Existe 2: " & Clientes.ContainsValue("Juana"))
         Console.WriteLine("Existe 4: " & Clientes.ContainsValue("Luis"))
 
-        Clientes.TryAdd(2, "Juani")
+        Clientes.TryAdd(2, "Juani")     ' key existe: falla
         Clientes.Remove(2)
-        Clientes.Add(2, "Juani")
+        Clientes.TryAdd(2, "Juani")
     End Sub
 
     Private Sub Iterar(clientes As Dictionary(Of Short, String))
